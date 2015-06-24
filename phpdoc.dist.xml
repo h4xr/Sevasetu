@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <parser>
+        <target>documentation/output</target>
+    </parser>
+    <transformer>
+        <target>documentation/output</target>
+    </transformer>
+    <files>
+        <directory>application</directory>
+        <directory>library</directory>
+        <directory>public</directory>
+    </files>
+</phpdoc>
