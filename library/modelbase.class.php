@@ -1,0 +1,105 @@
+<?php
+/**
+ * ModelBase
+ *
+ * Defines the base functions for the model
+ * @todo Implement the watchdog
+ */
+
+    /**
+     * Class ModelBase
+     * Defines the base class for the model
+     */
+    class ModelBase
+    {
+        /**
+         * @access protected
+         * @var Object The resource handle to the database
+         */
+        protected $_dbHandle;
+        /**
+         * @access protected
+         * @var Mixed The result set obtained through the database
+         */
+        protected $_result;
+
+        /**
+         * Connect to the database
+         *
+         * The function helps in connecting to the database server and implements the PDO
+         *
+         * @param String $host Database host server
+         * @param String $usrname Database Username
+         * @param String $password Database User Password
+         * @param String $dbname Database Name
+         *
+         * @return void
+         */
+        function connect($host,$usrname,$password,$dbname)
+        {
+            $uri="mysql:dbname=$dbname;host=$host";
+            try
+            {
+                $this->_dbHandle=new PDO($uri,$usrname,$password);
+            }
+            catch(PDOException $e)
+            {
+                error_log("Unable to establish database connection".$e->getMessage());
+                die("Unable to establish the database connection");
+            }
+        }
+
+        /**
+         * Disconnect from the database
+         */
+        function disconnect()
+        {
+            $this->_dbHandle=null;
+        }
+
+        /**
+         * Select all rows from the database set
+         *
+         * @returns PDOStatement|false
+         */
+        function selectAll()
+        {
+            $query='SELECT * FROM `'.$this->_table.'`';
+            $result=$this->_dbHandle->query($query);
+            if($result)
+            {
+                return $result;
+            }
+            return false;
+        }
+
+        /**
+         * Select the record corresponding to the given ID
+         *
+         * @param INT $id The ID data to be selected
+         *
+         * @returns PDOStatement|false
+         */
+        function selectFromID($id)
+        {
+            $query='SELECT * FROM`'.$this->_table.'` WHERE `id`=\''.$id.'\'';
+            $result=$this->_dbHandle->query($query);
+            if($result)
+            {
+                return $result;
+            }
+            return false;
+        }
+
+        /**
+         * Returns the no. of affected rows by the last UPDATE,INSERT,DELETE statement
+         *
+         * @return INT
+         */
+        function numAffectedRows()
+        {
+            return $this->_dbHandle->rowCount();
+        }
+
+
+    }

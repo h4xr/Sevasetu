@@ -88,7 +88,7 @@
         global $request;
 
         $requestArray=array();
-        $requestArray=explode('/',$requestArray);
+        $requestArray=explode('/',$request);
 
         $controller=$requestArray[0];
         array_shift($requestArray);
@@ -128,7 +128,7 @@
         } else if (file_exists(ROOT . DS . 'application' . DS . 'models' . DS . strtolower($className) . '.php')) {
             require_once(ROOT . DS . 'application' . DS . 'models' . DS . strtolower($className) . '.php');
         } else {
-            die("Server Parse Error");
+            die("Server Parse Error at file include ".$className);
         }
     }
 
