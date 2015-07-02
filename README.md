@@ -11,7 +11,7 @@ Project Details
 
 **Organisation:** SevaSetu
 
-**Project Version:** 0.1.1
+**Project Version:** 0.1.2
 
 
 Coding Convention
