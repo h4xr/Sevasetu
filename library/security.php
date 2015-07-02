@@ -86,3 +86,18 @@
             return true;
         }
     }
+
+    /**
+     * Escape the user input for sql input
+     *
+     * @param String $inp The input string
+     *
+     * @returns String
+     */
+    function sqlSafe($inp)
+    {
+        $safe=addslashes($inp);
+        $safe=strip_tags($safe);
+        $safe=htmlspecialchars($safe);
+        return $safe;
+    }
