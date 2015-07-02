@@ -1,0 +1,84 @@
+<?php
+/**
+ * Manages the Session handling for the Framework
+ *
+ * @todo Add watchdog support
+ * @author Saurabh Badhwar
+ */
+
+    /**
+     * Start a new session
+     *
+     * @returns void
+     */
+    function initiateSession()
+    {
+        session_start();
+    }
+
+    /**
+     * Get the session ID
+     *
+     * @returns String
+     */
+    function getSessionID()
+    {
+        return session_id();
+    }
+
+    /**
+     * Restart the session
+     *
+     * @returns void
+     */
+    function restartSession()
+    {
+        session_regenerate_id();
+    }
+
+    /**
+     * Set the session data
+     *
+     * @param String $name The name of the field to be set
+     * @param String $value The value for the field
+     *
+     * @returns void
+     */
+    function setSessionData($name,$value)
+    {
+        $_SESSION[$name]=$value;
+    }
+
+    /**
+     * Retrieve the session data
+     *
+     * @param String $name The name of field to be retrieved
+     *
+     * @returns String|Mixed
+     */
+    function getSessionData($name=null)
+    {
+        if($name==null)
+        {
+            $data=array();
+            foreach($_SESSION as $key=>$value)
+            {
+                $data[$key]=$value;
+            }
+            return $data;
+        }
+        else
+        {
+            return $_SESSION[$name];
+        }
+    }
+
+    /**
+     * Close the current session
+     *
+     * @returns void
+     */
+    function closeSession()
+    {
+        session_destroy();
+    }
