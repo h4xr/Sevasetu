@@ -1,0 +1,162 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: saurabh
+ * Date: 26/3/15
+ * Time: 11:19 AM
+ */
+
+class User extends Model{
+
+    /*
+     * User ID
+     */
+    private $user_id;
+    /*
+     * The username of the user
+     */
+    private $user_username;
+    /*
+     * The name of the user
+     */
+    private $user_name;
+    /*
+     * Password of the user
+     */
+    private $user_password;
+    /*
+     * E-mail of the user
+     */
+    private $user_email;
+    /*
+     * Salt of the user
+     */
+    private $user_salt;
+    /*
+     * User date of birth
+     */
+    private $user_dob;
+    /*
+     * User date of registration
+     */
+    private $user_dor;
+    /*
+     * User current status
+     */
+    private $user_status;
+
+    /*
+     * Add the user information to the database
+     */
+    public function insertUser($name,$email,$usrname,$password,$salt,$dob,$dor)
+    {
+        $this->user_username=$usrname;
+        $this->user_name=$name;
+        $this->user_password=$password;
+        $this->user_email=$email;
+        $this->user_salt=$salt;
+        $this->user_dob=$dob;
+        $this->user_dor=$dor;
+        $this->user_status=0;
+
+        $this->_result=$this->_dbHandle->exec("INSERT INTO users(users_name,users_username,users_password,users_email,users_salt,users_dob,users_dor,users_status) VALUES('$this->user_name','$this->user_username','$this->user_password','$this->user_email','$this->user_salt','$this->user_dob','$this->user_dor',$this->user_status)");
+        if($this->_result>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /*
+     * update user status
+     */
+    public function updateUserStatus($username,$status)
+    {
+        $this->_result=$this->_dbHandle->exec("UPDATE users SET users_status=$status WHERE users_username='$username'");
+        if($this->_result>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /*
+     * get user encryption
+     */
+    public function getUserEncryption($username)
+    {
+        return $this->query("SELECT users_password,users_salt FROM users WHERE users_username='$username'",true);
+    }
+
+    /*
+     * Update user password
+     */
+    public function updateUserPassword($username,$password,$salt)
+    {
+        $this->_result=$this->_dbHandle->exec("UPDATE users SET users_password='$password', users_salt='$salt' WHERE users_username='$username'");
+        if($this->_result>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /*
+     * get user data
+     */
+    public function getUser($username)
+    {
+        return $this->query("SELECT * FROM users WHERE users_username='$username'",true);
+    }
+
+    /*
+     * get user id
+     */
+    public function getUserID($username)
+    {
+        $temp=$this->query("SELECT users_id FROM users WHERE users_username='$username'",true);
+        $this->user_id=$temp['users_id'];
+        return $this->user_id;
+    }
+
+    /*
+     * Remove user
+     */
+    public function removeUser($username)
+    {
+        $this->_result=$this->_dbHandle->exec("DELETE FROM users WHERE users_username='$username'");
+        if($this->_result>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /*
+     * Check user existence
+     */
+    public function checkUserExistence($username)
+    {
+        $this->query("SELECT COUNT(users_id) AS num_users FROM users WHERE users_username='$username'");
+        if($this->_result['num_users']>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
