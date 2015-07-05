@@ -30,6 +30,11 @@
          */
         private $fileHandle;
         /**
+         * @access private
+         * @var String $fileName The file name for backtrace file
+         */
+        private $fileName;
+        /**
          * @access protected
          * @var String $message The error or exception message
          */
@@ -76,6 +81,7 @@
                 $this->backTraceTimeStamp=date("Y-m-d H:i:s");
                 $backtraceFile="watchdog_".md5($this->backTraceTimeStamp);
                 $backtraceFile=ROOT.DS.'tmp'.DS.'log'.DS.$backtraceFile;
+                $this->fileName=$backtraceFile;
                 $this->fileHandle=@fopen($backtraceFile,"a+");
                 if($this->fileHandle==FALSE)
                 {
@@ -156,9 +162,11 @@
         /**
          * Stops the backtrace and writes the data to the file
          *
+         * @param Int $save Whether to save the backtrace or not
+         *
          * @returns void
          */
-        function stopBacktrace()
+        function stopBacktrace($save=0)
         {
             $message=date("Y-m-d H:i:s").": Backtrace stopped";
             $this->backTraceMessage[]=$message;
@@ -166,6 +174,11 @@
             {
                 $str=$msg.'\n';
                 fwrite($this->fileHandle,$str);
+            }
+            if($save==0)
+            {
+                fclose($this->fileHandle);
+                unlink($this->fileName);
             }
         }
 

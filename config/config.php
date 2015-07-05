@@ -13,3 +13,7 @@ define('DB_HOST','localhost');
 
 //Email Config
 define("EMAIL_HOST","localhost");
+
+//Image Config
+define("IMAGE_WIDTH",800);
+define("IMAGE_HEIGHT",800);
