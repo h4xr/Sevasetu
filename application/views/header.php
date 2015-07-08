@@ -1,7 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: saurabh
- * Date: 1/7/15
- * Time: 4:08 PM
- */ 
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title><?php echo $title; ?></title>
+        </head>
+    <body>

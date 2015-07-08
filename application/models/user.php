@@ -310,5 +310,14 @@ class User extends Model{
     {
         $this->user_username=$username;
         $this->_result=$this->_dbHandle->exec("DELETE FROM users WHERE users_username='$this->user_username'");
+        if($this->_result===FALSE)
+        {
+            $this->watchdog->logError("Unable to delete the user record",202,__CLASS__);
+            return -1;
+        }
+        else
+        {
+            return $this->_result;
+        }
     }
 }
