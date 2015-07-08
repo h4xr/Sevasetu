@@ -8,6 +8,7 @@
  */
 
     include_once(ROOT.DS.'library'.DS.'security.php');
+    include_once(ROOT.DS.'library'.DS.'session.php');
     /**
      * Class UsersController
      *
@@ -88,5 +89,172 @@
             $content="Hey there,"."\r\n"."Thank you for registering at ".HOST."\r\n"."Click on the link below to activate your account \r\n ".HOST."users\\activate\\".$username."\\".$activationhash;
             $mail->prepareMail($to,$subject,$content);
             $mail->sendTextMail();
+        }
+
+        /**
+         * Activate The user account
+         *
+         * @param String $username The username of the user to be activated
+         * @param String $activationhash The activation hash of the user
+         */
+        function activate($username,$activationhash)
+        {
+            $username=sqlSafe($username);
+            $activationhash=sqlSafe($activationhash);
+
+
+            $salt=$this->User->getUserSalt($username);
+
+            if($salt==false)
+            {
+                $this->set("message","Invalid account");
+            }
+            else
+            {
+                if($activationhash==md5($salt))
+                {
+                    $this->User->updateStatus($username,1);
+                    $this->set("message","Account activated");
+                }
+                else
+                {
+                    $this->set("message","Invalid activation hash");
+                }
+            }
+        }
+
+        /**
+         * Logs the user in
+         */
+        function login()
+        {
+            $this->set("title","Login");
+        }
+
+        /**
+         * Log in processor
+         *
+         * Starts the session if the user is validated
+         */
+        function loginauth()
+        {
+            $username=sqlSafe($_POST['username']);
+            $password=sqlSafe($_POST['password']);
+
+            $salt=$this->User->getUserSalt($username);
+            if($salt==false)
+            {
+                $this->set("message","Username/Password Invalid");
+            }
+            else
+            {
+                $inPass=$this->User->getUserPassword($username);
+                if($inPass==generateHash($password.$salt) && $this->User->getUserStatus($username)==1)
+                {
+                    $userID=$this->User->getUserID($username);
+                    initiateSession();
+                    setSessionData("user_id",md5($userID));
+                    setSessionData("user_username",$username);
+                    setSessionData("user_identifier",md5($_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR']));
+                    $this->set("message","Login successful");
+                }
+                else
+                {
+                    $this->set("message","Username/Password Invalid or Account not activate.");
+                }
+            }
+        }
+
+        /**
+         * Logs the user out
+         */
+        function logout()
+        {
+            initiateSession();
+            if(isset($_SESSION['user_id']))
+            {
+                foreach($_SESSION as $vals)
+                {
+                    $vals=null;
+                }
+                closeSession();
+                $this->set("message","You have been logged out");
+            }
+            else
+            {
+                $this->set("message","User not logged in");
+            }
+        }
+
+        /**
+         * Forgot password page
+         */
+        function forgotpassword()
+        {
+            $this->set("title","Forgot Password");
+        }
+
+        /**
+         * Password reset confirmation
+         */
+        function processreset()
+        {
+            $username=sqlSafe($_POST['username']);
+            $passwordResetCode=$this->User->getUserPassword($username);
+            if($passwordResetCode==false)
+            {
+                $this->set("message","No user found with the specified Username");
+            }
+            else
+            {
+                $mail=new Email();
+                $activationhash=md5($passwordResetCode);
+                $to=$this->User->getUserEmail($username);
+                $subject="Reset your password";
+                $content="Hey there,"."\r\n"."You have requested a password reset at ".HOST."\r\n"."Click on the link below to reset your password \r\n ".HOST."users\\reset\\".$username."\\".$activationhash;
+                $mail->prepareMail($to,$subject,$content);
+                if($mail->sendTextMail()==true)
+                {
+                    $this->set("message","A mail with the reset code has been sent to your mail ID");
+                }
+                else
+                {
+                    $this->set("message","There was an error resetting the password. Try again later.");
+                }
+
+            }
+        }
+
+        /**
+         * Reset Password
+         *
+         * @param String $username The username for password reset
+         * @param String $activationhash The reset code
+         *
+         */
+        function reset($username,$activationhash)
+        {
+            $username=sqlSafe($username);
+            $activationhash=sqlSafe($activationhash);
+
+
+            $hash=$this->User->getUserPassword($username);
+
+            if($hash==false)
+            {
+                $this->set("message","Invalid account");
+            }
+            else
+            {
+                if($activationhash==md5($hash))
+                {
+                    $this->User->updateStatus($username,1);
+                    $this->set("message","Reset Your password");
+                }
+                else
+                {
+                    $this->set("message","Invalid activation hash");
+                }
+            }
         }
     }

@@ -1,0 +1,11 @@
+[08-Jul-2015 11:17:43 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[08-Jul-2015 11:17:43 Asia/Calcutta] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/saurabh/net/library/shared.php on line 105
+[08-Jul-2015 11:19:12 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[08-Jul-2015 11:19:12 Asia/Calcutta] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/saurabh/net/library/shared.php on line 105
+[08-Jul-2015 11:20:32 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[08-Jul-2015 11:20:32 Asia/Calcutta] PHP Fatal error:  Class 'Favicon.icoController' not found in /home/saurabh/net/library/shared.php on line 105
+[08-Jul-2015 11:26:01 Asia/Calcutta] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/saurabh/net/application/models/user.php on line 69
+[08-Jul-2015 11:26:18 Asia/Calcutta] PHP Notice:  Undefined property: PDOStatement::$users_salt in /home/saurabh/net/application/models/user.php on line 69
+[08-Jul-2015 11:34:45 Asia/Calcutta] PHP Notice:  Undefined index: users_id in /home/saurabh/net/application/models/user.php on line 165
+[08-Jul-2015 11:36:19 Asia/Calcutta] PHP Notice:  Undefined index: username in /home/saurabh/net/application/controllers/userscontroller.php on line 141
+[08-Jul-2015 11:36:19 Asia/Calcutta] PHP Notice:  Undefined index: password in /home/saurabh/net/application/controllers/userscontroller.php on line 142

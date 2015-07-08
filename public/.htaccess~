@@ -5,7 +5,3 @@
 
     RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
 </IfModule>
-<ifmodule mod_rewrite.c>
- RewriteCond %{THE_REQUEST} favicon.ico [NC]
- RewriteRule (.*) http://domain.tld/favicon.ico [R=301,L] 
-</ifmodule>

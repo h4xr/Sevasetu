@@ -60,14 +60,16 @@ class User extends Model{
     function getUserSalt($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_salt FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_salt FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserSalt query successfully",200,__CLASS__);
             return false;
         }
+
         foreach($this->_result as $result)
         {
+
             $this->user_salt=$result['users_salt'];
         }
         return $this->user_salt;
@@ -83,7 +85,7 @@ class User extends Model{
     function getUserPic($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_pic FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_pic FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserPic query successfully",200,__CLASS__);
@@ -106,7 +108,7 @@ class User extends Model{
     function getUserStatus($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_status FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_status FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserStatus query successfully",200,__CLASS__);
@@ -129,7 +131,7 @@ class User extends Model{
     function getUserPassword($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_password FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_password FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserPassword query successfully",200,__CLASS__);
@@ -152,7 +154,7 @@ class User extends Model{
     function getUserID($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_salt FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_id FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserID query successfully",200,__CLASS__);
@@ -175,7 +177,7 @@ class User extends Model{
     function getUserEmail($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT users_email FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT users_email FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUserEmail query successfully",200,__CLASS__);
@@ -198,7 +200,7 @@ class User extends Model{
     function getUser($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->query("SELECT * FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->query("SELECT * FROM users WHERE users_username='$this->user_username'");
         if($this->_result==FALSE)
         {
             $this->watchdog->logError("Unable to execute the getUser query successfully",200,__CLASS__);
@@ -232,7 +234,7 @@ class User extends Model{
     function updateStatus($username,$status)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->exec("UPDATE users SET 'users_status'=$status WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->exec("UPDATE users SET users_status='$status' WHERE users_username='$this->user_username'");
         if($this->_result===FALSE)
         {
             $this->watchdog->logError("Unable to perform update query updateStatus",201,__CLASS__);
@@ -252,7 +254,7 @@ class User extends Model{
     function updatePassword($username,$password)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->exec("UPDATE users SET 'users_password'=$password WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->exec("UPDATE users SET users_password='$password' WHERE users_username='$this->user_username'");
         if($this->_result===FALSE)
         {
             $this->watchdog->logError("Unable to perform update query updatePassword",201,__CLASS__);
@@ -307,6 +309,6 @@ class User extends Model{
     function removeUser($username)
     {
         $this->user_username=$username;
-        $this->_result=$this->_dbHandle->exec("DELETE FROM users WHERE 'users_username'='$this->user_username'");
+        $this->_result=$this->_dbHandle->exec("DELETE FROM users WHERE users_username='$this->user_username'");
     }
 }
