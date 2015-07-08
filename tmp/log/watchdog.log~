@@ -1,0 +1,67 @@
+2015-07-08 09:53:50(User): 201 :: Unable to insert a new user record\n2015-07-08 09:56:27(User): 201 :: Unable to insert a new user record\n2015-07-08 10:01:13(User): 201 :: Unable to insert a new user record\n2015-07-08 10:01:15(User): 201 :: Unable to insert a new user record\n2015-07-08 10:05:08(User): 201 :: Unable to insert a new user record\n2015-07-08 10:08:11(User): 201 :: Unable to insert a new user record\n2015-07-08 10:11:47(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '$' in 'field list'
+)
+\n2015-07-08 10:12:37(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/714b8f280a137f987b04abdcf8b9e5a5_Screenshot' at line 1
+)
+\n2015-07-08 10:14:33(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/d3be22b75ff82516c7a251fc893cf300_Screenshot' at line 1
+)
+\n2015-07-08 10:18:30(User): 500 :: Got image path as /home/saurabh/net/public/uploads/dp/532cfd12e6ab9a98eb538a097548bf99_Screenshot from 2015-07-06 18:37:18.png\n2015-07-08 10:18:30(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/532cfd12e6ab9a98eb538a097548bf99_Screenshot' at line 1
+)
+\n2015-07-08 10:20:55(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/1950b52fc82b2c45577d732f7c946e49_Screenshot' at line 1
+)
+\n2015-07-08 10:23:46(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'/home/saurabh/net/public/uploads/dp/83da72135dc30ca1885e4f42f516618a_Screensh' at line 1
+)
+\n2015-07-08 10:25:03(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/home/saurabh/net/public/uploads/dp/ca835fa097f58212f2b0efdbcd23babf_Screenshot ' at line 1
+)
+\n2015-07-08 10:29:42(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/a17fc49273ded738dc454b4a09de79d1_Screenshot' at line 1
+)
+\n2015-07-08 10:32:49(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''/home/saurabh/net/public/uploads/dp/8d5eafd7734b4cd73ca2868db41c305b_Screensho' at line 1
+)
+\n2015-07-08 10:34:34(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''/home/saurabh/net/public/uploads/dp/d8de38e01aa043ca3b54342e8de4aa32_Screenshot' at line 1
+)
+\n2015-07-08 10:39:40(User): 201 :: Unable to insert a new user record: Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''"/home/saurabh/net/public/uploads/dp/68ef2d10377654eec964d16152983a21_Screensho' at line 1
+)
+\n

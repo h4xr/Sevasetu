@@ -1,0 +1,175 @@
+<?php
+/**
+ * E-Mail subsystem for the framework
+ * Manages the sending of E-Mail from the framework
+ * and HTML outputs.
+ *
+ * @author Saurabh Badhwar
+ */
+
+    /**
+     * Class Email
+     *
+     * Provides abstractions for the E-Mail system for the
+     * framework.
+     */
+    class Email
+    {
+        /**
+         * @access protected
+         * @var String $from The Mail ID of sender
+         */
+        protected $from;
+        /**
+         * @access protected
+         * @var String $to The Mail ID of receiver
+         */
+        protected $to;
+        /**
+         * @access protected
+         * @var String $subject The subject of the mail
+         */
+        protected $subject;
+        /**
+         * @access protected
+         * @var String $content The content to be sent in mail
+         */
+        protected $content;
+        /**
+         * @access protected
+         * @var String $type The type of mail to be sent -Text/HTML
+         */
+        protected $type;
+        /**
+         * @access protected
+         * @var String $headers The headers to be sent with the mail
+         */
+        protected $headers;
+        /**
+         * @var Watchdog $watchdog The watchdog object
+         */
+        protected $watchdog;
+
+        /**
+         * The default constructor for the class
+         * Initialises the Watchdog
+         *
+         * Takes input variable number of arguments
+         * The function assigns values to internal arguments in the order from,subject,content,type
+         */
+        function __construct()
+        {
+            $this->from=EMAIL_HOST;
+            $this->watchdog=new Watchdog();
+            $this->headers=EMAIL_HOST."\r\n";
+            if(func_num_args()==1)
+            {
+                $this->from=func_get_arg(0);
+            }
+            else if(func_num_args()==2)
+            {
+                $this->from=func_get_arg(0);
+                $this->subject=func_get_arg(1);
+            }
+            else if(func_num_args()==3)
+            {
+                $this->from=func_get_arg(0);
+                $this->subject=func_get_arg(1);
+                $this->content=func_get_arg(2);
+            }
+            else if(func_num_args()==0)
+            {
+
+            }
+            else
+            {
+                $this->from=func_get_arg(0);
+                $this->subject=func_get_arg(1);
+                $this->content=func_get_arg(2);
+                $this->type=func_get_arg(3);
+            }
+        }
+
+        /**
+         * Prepare the Mail for sending
+         *
+         * @param String $to The address of the recipient
+         * @param String $subject The subject of the mail
+         * @param String $content The content of the mail
+         *
+         * @returns void
+         */
+        function prepareMail($to,$subject,$content)
+        {
+            $this->to=$to;
+            $this->subject=$subject;
+            $this->content=sqlSafe($content);
+        }
+
+        /**
+         * Sends a text mail
+         *
+         * @returns bool
+         */
+        function sendTextMail()
+        {
+            if(mail($this->to,$this->subject,$this->content,$this->headers)==FALSE)
+            {
+                $this->watchdog->logError("Sending of Text Mail failed",100,__FILE__);
+                return false;
+            }
+            return true;
+        }
+
+        /**
+         * Sends an HTML Mail
+         *
+         * @returns bool
+         */
+        function sendHtmlMail()
+        {
+            $this->headers.='MIME-Version: 1.0'."\r\n";
+            $this->headers.='Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            if(mail($this->to,$this->subject,$this->content,$this->headers)==FALSE)
+            {
+                $this->watchdog->logError("Sending of HTML Mail failed",101,__FILE__);
+                return false;
+            }
+            return true;
+        }
+
+        /**
+         * Send a mass mail
+         * @param Array $address The address of the recipients
+         * @param Int $type The type of mail to be sent. Defaults to text
+         *
+         * @returns void
+         */
+        function massMail($address,$type=0)
+        {
+            if($type==0)
+            {
+                foreach($address as $addr)
+                {
+                    $this->to=$addr;
+                    $this->sendTextMail();
+                }
+            }
+            else
+            {
+                foreach($address as $addr)
+                {
+                    $this->to=$addr;
+                    $this->sendHtmlMail();
+                }
+            }
+        }
+
+        /**
+         * Destructor for the class
+         */
+        function __destruct()
+        {
+            $this->watchdog=null;
+        }
+    }

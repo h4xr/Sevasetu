@@ -14,7 +14,7 @@
     {
         /**
          * @access protected
-         * @var Object The resource handle to the database
+         * @var PDO The resource handle to the database
          */
         protected $_dbHandle;
         /**

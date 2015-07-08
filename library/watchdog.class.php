@@ -82,7 +82,7 @@
                 $backtraceFile="watchdog_".md5($this->backTraceTimeStamp);
                 $backtraceFile=ROOT.DS.'tmp'.DS.'log'.DS.$backtraceFile;
                 $this->fileName=$backtraceFile;
-                $this->fileHandle=@fopen($backtraceFile,"a+");
+                $this->fileHandle=@fopen($backtraceFile,"w");
                 if($this->fileHandle==FALSE)
                 {
                     die("Unable to initiate the backtrace");
@@ -108,7 +108,7 @@
             $this->message=$message;
             $this->messageCode=$code;
             $this->messageOrigin=$origin;
-            $errorString=date("Y-m-d H:i:s")."($this->messageOrigin): $this->messageCode :: ".$this->message.'\n';
+            $errorString=date("Y-m-d H:i:s")."($this->messageOrigin): $this->messageCode :: ".$this->message.'\r\n';
             if(flock($this->fileHandle,LOCK_EX)==TRUE)
             {
                 fwrite($this->fileHandle,$errorString);
@@ -172,7 +172,7 @@
             $this->backTraceMessage[]=$message;
             foreach($this->backTraceMessage as $msg)
             {
-                $str=$msg.'\n';
+                $str=$msg.'\r\n';
                 fwrite($this->fileHandle,$str);
             }
             if($save==0)
@@ -216,6 +216,6 @@
          */
         function __destruct()
         {
-            fclose($this->fileHandle);
+            //fclose($this->fileHandle);
         }
     }

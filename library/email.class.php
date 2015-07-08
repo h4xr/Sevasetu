@@ -55,7 +55,7 @@
          * Initialises the Watchdog
          *
          * Takes input variable number of arguments
-         * The function assigns values to internal arguments in the order from,subject,content,type
+         * The function assigns values to internal arguments in the order to,subject,content,type
          */
         function __construct()
         {
@@ -64,16 +64,16 @@
             $this->headers=EMAIL_HOST."\r\n";
             if(func_num_args()==1)
             {
-                $this->from=func_get_arg(0);
+                $this->to=func_get_arg(0);
             }
             else if(func_num_args()==2)
             {
-                $this->from=func_get_arg(0);
+                $this->to=func_get_arg(0);
                 $this->subject=func_get_arg(1);
             }
             else if(func_num_args()==3)
             {
-                $this->from=func_get_arg(0);
+                $this->to=func_get_arg(0);
                 $this->subject=func_get_arg(1);
                 $this->content=func_get_arg(2);
             }
@@ -83,7 +83,7 @@
             }
             else
             {
-                $this->from=func_get_arg(0);
+                $this->to=func_get_arg(0);
                 $this->subject=func_get_arg(1);
                 $this->content=func_get_arg(2);
                 $this->type=func_get_arg(3);

@@ -90,6 +90,7 @@
             $this->error=0;
             $this->watchdog=new Watchdog(1); //enable watchdog to perform backtrace
             $this->watchdog->startBacktrace("Image"); //start the backtrace
+
         }
 
         /**
@@ -115,6 +116,7 @@
             }
             else
             {
+                $this->error=1;
                 $this->watchdog->logBacktraceMessage("Image validation failed/Format not supported");
                 return false;
             }
@@ -161,6 +163,7 @@
             }
             else
             {
+
                 $this->watchdog->logBacktraceMessage("Incompatible format received for image recreation in module recreateImage");
                 return false;
             }
@@ -168,7 +171,7 @@
             if(imagecopyresized($thumb,$src,0,0,0,0,IMAGE_WIDTH,IMAGE_HEIGHT,$this->width,$this->height)==TRUE)
             {
                 $this->watchdog->logBacktraceMessage("Image recreated from specified format");
-                $this->filePath=$this->uploadPath.DS.md5(date("Y-m-d H:i:s"))."_".$this->image['name'];
+                $this->filePath=$this->uploadPath.DS.md5(date("Y-m-d H:i:s"))."_".str_replace(' ','',$this->image['name']).'.jpg';
                 if(imagejpeg($thumb,$this->filePath)==TRUE)
                 {
                     $this->watchdog->logBacktraceMessage("Image created");
@@ -197,7 +200,7 @@
         function moveUploadedImage()
         {
             $this->watchdog->logBacktraceMessage("Call to module moveUploadedImage");
-            $this->filePath=$this->uploadPath.DS.md5(date("Y-m-d H:i:s"))."_".$this->image['name'];
+            $this->filePath=$this->uploadPath.DS.md5(date("Y-m-d H:i:s"))."_".str_replace(' ','',$this->image['name']);
             if(move_uploaded_file($this->image['tmp_name'],$this->filePath)==TRUE)
             {
                 $this->watchdog->logBacktraceMessage("Image moved successfully");

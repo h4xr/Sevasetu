@@ -31,6 +31,11 @@ class Controller
     protected $_template;
 
     /**
+     * @var Watchdog $watchdog The watchdog object
+     */
+    protected $watchdog;
+
+    /**
      * Default constructor for the Controller class
      *
      * @param $model Name of the model
@@ -42,6 +47,7 @@ class Controller
         $this->_model=$model;
         $this->_controller=$controller;
         $this->_action=$action;
+        $this->watchdog=new Watchdog();
 
         //Create a new instance of the model
         $this->$model=new $model;
@@ -52,8 +58,8 @@ class Controller
     /**
      * Sets the property value of variables for the template
      *
-     * @param $name Name of the property
-     * @param $value The value of the property
+     * @param String $name of the property
+     * @param String $value value of the property
      *
      * @return void
      */

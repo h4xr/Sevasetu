@@ -43,7 +43,7 @@
         $randomString='';
         for($i=0;$i<SALT_LENGTH;$i++)
         {
-            $randomString.=$characters[rand(0,strlen($characters))];
+            $randomString.=$characters[rand(0,strlen($characters)-1)];
         }
         return $randomString;
     }
@@ -96,7 +96,8 @@
      */
     function sqlSafe($inp)
     {
-        $safe=addslashes($inp);
+        $safe=trim($inp);
+        $safe=addslashes($safe);
         $safe=strip_tags($safe);
         $safe=htmlspecialchars($safe);
         return $safe;

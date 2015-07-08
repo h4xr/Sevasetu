@@ -20,6 +20,12 @@
         protected $_model;
 
         /**
+         * @access protected
+         * @var Watchdog $watchdog The watchdog object
+         */
+        protected $watchdog;
+
+        /**
          * Construtor for the Model Class
          *
          * Calls the connect function and sets the model and table name
@@ -28,6 +34,7 @@
             $this->connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
             $this->_model=get_class($this);
             $this->_table=strtolower($this->_model)."s";
+            $this->watchdog=new Watchdog();
         }
 
         /**

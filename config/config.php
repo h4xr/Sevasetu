@@ -17,3 +17,6 @@ define("EMAIL_HOST","localhost");
 //Image Config
 define("IMAGE_WIDTH",800);
 define("IMAGE_HEIGHT",800);
+
+//Domain Config
+define("HOST","http://www.sevasetu.org/");
