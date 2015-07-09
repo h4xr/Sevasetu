@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="679d9615-ff8b-41c3-9854-faa87401557f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/blog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/blogscontroller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blogs/newpost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blogs/save.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/categories/add.php" afterPath="$PROJECT_DIR$/application/views/categories/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/categoriescontroller.php" afterPath="$PROJECT_DIR$/application/controllers/categoriescontroller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blogs/remove.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blogs/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blogs/viewpost.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/log/error.log" afterPath="$PROJECT_DIR$/tmp/log/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/log/watchdog.log" afterPath="$PROJECT_DIR$/tmp/log/watchdog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sevasetu.iws" />
@@ -35,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blog.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="blog.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="307" column="9" selection-start="9834" selection-end="9834" vertical-scroll-proportion="0.6851211" vertical-offset="5130" max-vertical-offset="5994">
+            <state line="307" column="9" selection-start="9834" selection-end="9834" vertical-scroll-proportion="-14.666667" vertical-offset="5130" max-vertical-offset="5994">
               <folding>
                 <element signature="e#6#209#0" expanded="true" />
                 <marker date="1436408326530" expanded="true" signature="1676:1725" placeholder="SELECT * FRO..blogs..." />
@@ -57,28 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogscontroller.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="blogscontroller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/blogscontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="13" selection-start="2046" selection-end="2046" vertical-scroll-proportion="-14.666667" vertical-offset="864" max-vertical-offset="2682">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/blogs/save.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="27" selection-end="27" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newpost.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/blogs/newpost.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="336" selection-end="336" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="216">
+            <state line="128" column="9" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.47058824" vertical-offset="2032" max-vertical-offset="2682">
               <folding />
             </state>
           </provider>
@@ -137,6 +113,9 @@
         <option value="$PROJECT_DIR$/application/controllers/blogscontroller.php" />
         <option value="$PROJECT_DIR$/application/views/blogs/newpost.php" />
         <option value="$PROJECT_DIR$/application/views/blogs/save.php" />
+        <option value="$PROJECT_DIR$/application/views/blogs/view.php" />
+        <option value="$PROJECT_DIR$/application/views/blogs/viewpost.php" />
+        <option value="$PROJECT_DIR$/application/views/blogs/remove.php" />
       </list>
     </option>
   </component>
@@ -494,38 +473,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="30" selection-start="7055" selection-end="7055" vertical-scroll-proportion="0.0" vertical-offset="4104" max-vertical-offset="5274">
-          <folding>
-            <element signature="e#6#209#0" expanded="true" />
-            <marker date="1436408326530" expanded="true" signature="1676:1725" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="2476:2521" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="3296:3347" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="4123:4176" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="4966:5019" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="5755:5774" placeholder="SELECT * FRO..blogs..." />
-            <marker date="1436408326530" expanded="true" signature="6500:6570" placeholder="UPDATE blogs..." />
-            <marker date="1436408326530" expanded="true" signature="7154:7227" placeholder="UPDATE blogs..." />
-            <marker date="1436408326530" expanded="true" signature="7814:7886" placeholder="UPDATE blogs..." />
-            <marker date="1436408326530" expanded="true" signature="9212:9546" placeholder="INSERT INTO ..." />
-            <marker date="1436408326530" expanded="true" signature="10060:10103" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="9" selection-start="5794" selection-end="5794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/userscontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="30" selection-start="5727" selection-end="5727" vertical-scroll-proportion="0.0" vertical-offset="3114" max-vertical-offset="3366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/users/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
@@ -797,16 +744,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/blogscontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="13" selection-start="2046" selection-end="2046" vertical-scroll-proportion="-14.666667" vertical-offset="864" max-vertical-offset="2682">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="9" selection-start="9834" selection-end="9834" vertical-scroll-proportion="0.6851211" vertical-offset="5130" max-vertical-offset="5994">
+        <state line="307" column="9" selection-start="9834" selection-end="9834" vertical-scroll-proportion="-14.666667" vertical-offset="5130" max-vertical-offset="5994">
           <folding>
             <element signature="e#6#209#0" expanded="true" />
             <marker date="1436408326530" expanded="true" signature="1676:1725" placeholder="SELECT * FRO..blogs..." />
@@ -821,6 +761,34 @@
             <marker date="1436408326530" expanded="true" signature="9212:9546" placeholder="INSERT INTO ..." />
             <marker date="1436408326530" expanded="true" signature="10060:10103" placeholder="DELETE FROM ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blogs/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="0" selection-end="109" vertical-scroll-proportion="0.21319798" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blogs/viewpost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="109" selection-end="109" vertical-scroll-proportion="0.24365482" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blogs/remove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.15228426" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/blogscontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="9" selection-start="3508" selection-end="3508" vertical-scroll-proportion="0.47058824" vertical-offset="2032" max-vertical-offset="2682">
+          <folding />
         </state>
       </provider>
     </entry>
