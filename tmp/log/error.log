@@ -24,3 +24,9 @@
 [08-Jul-2015 17:40:48 Asia/Calcutta] PHP Notice:  Undefined index: category_name in /home/saurabh/net/application/controllers/categoriescontroller.php on line 35
 [08-Jul-2015 17:40:48 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
 [08-Jul-2015 17:42:37 Asia/Calcutta] PHP Notice:  Undefined index: category_name in /home/saurabh/net/application/controllers/categoriescontroller.php on line 36
+[09-Jul-2015 07:32:01 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
+[09-Jul-2015 13:40:35 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[09-Jul-2015 13:40:35 Asia/Calcutta] PHP Fatal error:  Class '' not found in /home/saurabh/net/library/controller.class.php on line 53
+[09-Jul-2015 15:01:56 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
+[09-Jul-2015 15:02:15 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
+[09-Jul-2015 15:02:34 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4

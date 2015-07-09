@@ -14,4 +14,34 @@
 (
     [url] => categories/addcategory
 )
+\r\n2015-07-09 07:32:11(CategoriesController): 500 :: Category error: Array
+(
+    [url] => categories/addcategory
+    [category_name] => hi
+    [sub] => Add category
+)
+\r\n2015-07-09 07:33:30(CategoriesController): 500 :: Category error: Array
+(
+    [url] => categories/addcategory
+    [category_name] => hi
+    [sub] => Add category
+)
+\r\n2015-07-09 07:33:30(Categorie): 201 :: Unable to insert a new category into the database\r\n2015-07-09 07:33:39(CategoriesController): 500 :: Category error: Array
+(
+    [url] => categories/addcategory
+    [category_name] => hi
+    [sub] => Add category
+)
+\r\n2015-07-09 07:33:39(Categorie): 201 :: Unable to insert a new category into the database\r\n2015-07-09 07:34:28(CategoriesController): 500 :: Category error: Array
+(
+    [url] => categories/addcategory
+    [category_name] => ada
+    [sub] => Add category
+)
+\r\n2015-07-09 07:34:57(CategoriesController): 500 :: Category error: Array
+(
+    [url] => categories/addcategory
+    [category_name] => zubin
+    [sub] => Add category
+)
 \r\n

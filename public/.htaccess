@@ -3,7 +3,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,PT,L]
 </IfModule>
 <ifmodule mod_rewrite.c>
  RewriteCond %{THE_REQUEST} favicon.ico [NC]

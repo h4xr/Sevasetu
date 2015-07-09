@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule ^$ public/ [L]
-    RewriteRule (.*) public/$1 [L]
+    RewriteRule (.*) public/$1 [QSA,L]
 </IfModule>
 <ifmodule mod_rewrite.c>
  RewriteCond %{THE_REQUEST} favicon.ico [NC]

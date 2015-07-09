@@ -32,8 +32,8 @@
         {
             $this->set("title","New category");
             initiateSession();
-            $this->watchdog->logError("Category error: ".print_r($_GET,true),500,__CLASS__);
-            $category=sqlSafe($_POST['category_name']);
+            //$this->watchdog->logError("Category error: ".print_r($_GET),500,__CLASS__);
+            $category=sqlSafe($_GET['category_name']);
             if(!isset($_SESSION['user_id']))
             {
                 $this->set("message","User not logged in");
