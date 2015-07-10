@@ -12,11 +12,11 @@ define('DB_PASS','MYNET696');
 define('DB_HOST','localhost');
 
 //Email Config
-define("EMAIL_HOST","localhost");
+define("EMAIL_HOST","no-reply@ieeeniec.com");
 
 //Image Config
 define("IMAGE_WIDTH",800);
 define("IMAGE_HEIGHT",800);
 
 //Domain Config
-define("HOST","http://www.sevasetu.org/");
+define("HOST","localhost");

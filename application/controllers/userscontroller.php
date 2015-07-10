@@ -71,6 +71,7 @@
             }
             else
             {
+                $this->sendActivationMail($username);
                 $this->set("message","Registration Successful. Please check your mail to activate your account.");
             }
         }
