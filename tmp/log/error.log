@@ -1,0 +1,5 @@
+[11-Jul-2015 09:30:55 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
+[11-Jul-2015 09:32:15 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/image.class.php on line 104
+[11-Jul-2015 09:32:51 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/image.class.php on line 104
+[11-Jul-2015 09:35:05 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/image.class.php on line 104
+[11-Jul-2015 09:43:40 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
