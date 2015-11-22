@@ -1,0 +1,177 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.transition
+{
+    transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+}
+
+body
+{
+    background-image: url("../images/naps.jpg");
+    background-size: cover;
+
+
+}
+
+.circle
+{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(43, 164, 210, 0.72);
+    border-radius: 50%;
+    top:-75px;
+    position: fixed;
+    overflow: hidden;
+
+}
+
+#circle1
+{
+    float: left;
+    left: -75px;
+
+
+}
+
+#circle2
+{
+    float: right;
+    right: -75px;
+
+}
+
+
+
+#feed-con
+{
+    /*background-color: red;*/
+    width: auto;
+    height: auto;
+    margin-top: 85px;
+    margin-left: 85px;
+    overflow: hidden;
+}
+
+#feed
+{
+
+    width: 35px;
+    height: 35px;
+    enable-background:new 0 0 425 425;
+    fill: white;
+
+
+}
+
+.circle:hover
+{
+    width: 200px;
+    height: 200px;
+}
+
+.circle:hover #feed-con #feed
+{
+    width: 75px;
+    height: 75px;
+}
+
+#clock-con
+{
+    /*background-color: red;*/
+    width: auto;
+    height: auto;
+    margin-top: 90px;
+
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+#clock
+{
+
+    width: 35px;
+    height: 35px;
+    enable-background:new 0 0 47.001 47.001;
+    fill: white;
+
+
+
+}
+
+.circle:hover
+{
+    width: 200px;
+    height: 200px;
+}
+
+.circle:hover #clock-con #clock
+{
+    width: 75px;
+    height: 75px;
+}
+
+
+#logo
+{
+    width: 100%;
+    display: block;
+
+    margin: 0 auto;
+
+
+
+}
+
+#logo img
+{
+    width:13% ;
+    height: 4%;
+    margin-left:45%;
+}
+
+#strap
+{
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    margin-top: 300px;
+    text-align: center;
+    font-size: 110%;
+    color: #ffffff;
+    -webkit-filter:blur(2px);
+    filter:blur(2px);
+    -o-filter:blur(2px);
+    -moz-filter:blur(2px);
+
+}
+
+#strap:hover
+{
+    -webkit-filter:blur(0);
+    filter:blur(0);
+    -o-filter:blur(0);
+    -moz-filter:blur(0);
+}
+#strap h1
+{
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#strap h4
+{
+    letter-spacing: 5px;
+    font-weight: 400;
+
+}
+
+

@@ -1,0 +1,227 @@
+body
+{
+	background-color: #2E0630;
+}
+
+a,a:visited,a:hover
+{
+	color: inherit;
+	text-decoration: none;
+}
+#admin-index
+{
+	height: 100%;
+}
+
+#admin-logo
+{
+	margin-top: 20px;
+	position: relative;
+	max-width: 300px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: #ffffff;
+	font-size: 3em;
+	letter-spacing: 3px;
+	font-family: "sans-serif",cursive,serif;
+}
+
+#admin-login,#admin-register
+{
+	margin-top: 20px;
+	position: relative;
+	max-width: 400px;
+}
+
+#admin-login-form,#admin-register-form
+{
+	width: 100%;
+	height: 100px;
+}
+
+#login-form-title,#register-form-title
+{
+	text-align: center;
+	color: #ffffff;
+	font-size: 2em;
+	height: 80px;
+	line-height: 80px;
+}
+
+#admin-login-form input,#admin-register-form input
+{
+	display: block;
+}
+
+.arrow-input
+{
+	width: 99%;
+	height: 50px;
+	border: 1px solid transparent;
+	background-color: #ffffff;
+}
+
+.arrow-input[id*="admin"]
+{
+	border-bottom: 1px solid #2E0630;
+}
+
+.arrow-textarea
+{
+	min-width: 99%;
+	max-width: 99%;
+	width: 99%;
+	min-height: 100px;
+	border: 1px solid transparent;
+	background-color: #ffffff;
+}
+
+.arrow-label
+{
+	color: white;
+}
+
+.arrow-button
+{
+	margin: 20px auto;
+	border: 0;
+	width: 100px;
+	height: 40px;
+	border-radius: 8px;
+}
+
+.arrow-select
+{
+	width: 30%;
+	height: 50px;
+	margin: 10px 0;
+	background-color: #ffffff;
+	border: 0;
+}
+
+.arrow-input#username
+{
+	border-bottom: 1px solid #2E0630;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.arrow-input#password
+{
+	border-top: 1px solid #2E0630;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.arrow-button#submit
+{
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	background-color: rgba(32, 239, 42, 1);
+}
+
+#social-icons
+{
+	position: relative;
+	max-width: 300px;
+	height: 100px;
+	margin-top: 200px;
+}
+
+.social-icon-link img
+{
+	width: 45px;
+	height: 45px;
+	margin-left: 30px;
+	background-color: #7a067c;
+}
+
+/** Navigation bar **/
+#admin-nav
+{
+	position: fixed;
+	min-width: 150px;
+	width: 15%;
+	min-height: 100%;
+	height: auto;
+	background-color: #5D1661;
+	color: #ffffff;
+}
+
+#adminpanel-logo
+{
+	width: 100%;
+	text-align: center;
+	height: 80px;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: "Times New Roman",sans-serif;
+	line-height: 80px;
+	letter-spacing: 1px;
+}
+
+#admin-nav ul
+{
+	width: 100%;
+	list-style: none;
+}
+
+.admin-nav-link
+{
+	width: 100%;
+	height: 60px;
+	text-align: left;
+	line-height: 60px;
+	font-size: 1.2em;
+}
+/** End of navigation bar **/
+/** Slider control **/
+#featured-content-container,.admin-block
+{
+	position: relative;
+	width: 80%;
+	margin-right: 50px;
+	color: white;
+}
+
+.inner-title
+{
+	height: 60px;
+	line-height: 60px;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.inner-link,.inner-link:hover,.inner-link:visited
+{
+	color: rgb(130, 205, 140);
+}
+
+th
+{
+	text-align: center;
+}
+
+td
+{
+	text-align: center;
+	color: #ffffff;
+}
+
+#slider-form
+{
+	padding: 20px;
+	color: #000000;
+}
+
+#slider-form > textarea
+{
+	margin: 10px 0;
+}
+/** End of Slider control **/
+/** Start of Pages control **/
+
+/** End of Pages control **/

@@ -2,6 +2,7 @@
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !\.(xml|txt|css|js|png|jpeg|jpg|eot|svg|ttf|woff|woff2|mkv|srt|zip|apk)$
 
     RewriteRule ^(.*)$ index.php?url=$1 [QSA,PT,L]
 </IfModule>

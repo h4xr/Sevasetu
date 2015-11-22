@@ -1,0 +1,22 @@
+<?php
+/**
+ * The configuration for the framework
+ *
+ * @author Saurabh Badhwar
+ */
+
+define('DEVELOPMENT_ENVIRONMENT',true);
+define('DB_NAME','ltm_16565718_sevasetu');
+define('DB_USER','ltm_16565718');
+define('DB_PASS','MYNET696');
+define('DB_HOST','sql303.ultimatefreehost.in');
+
+//Email Config
+define("EMAIL_HOST","no-reply@sevasetu.com");
+
+//Image Config
+define("IMAGE_WIDTH",800);
+define("IMAGE_HEIGHT",800);
+
+//Domain Config
+define("HOST","localhost");

@@ -12,7 +12,7 @@ define('DB_PASS','MYNET696');
 define('DB_HOST','localhost');
 
 //Email Config
-define("EMAIL_HOST","no-reply@ieeeniec.com");
+define("EMAIL_HOST","no-reply@sevasetu.com");
 
 //Image Config
 define("IMAGE_WIDTH",800);

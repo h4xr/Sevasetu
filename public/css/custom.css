@@ -1,0 +1,131 @@
+.navbar-brand > img
+{
+	width: 30px;
+	height: 30px;
+}
+
+.content-container
+{
+	margin-top: 80px;
+}
+
+/* Featured content */
+.carousel
+{
+	height: 400px;
+	margin-bottom: 40px;
+}
+
+.carousel .item
+{
+	height: 400px;
+}
+
+.carousel-inner > .item > img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	background-color: #e8e8e8;
+	height: 400px;
+}
+
+/* Focused Content */
+#focus-points
+{
+	margin-bottom: 30px;
+}
+
+.focus-title
+{
+	background-color: #e8e8e8;
+	padding-left: 5px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+/* User Registration and Login */
+
+#registration-container,#login-container
+{
+	max-width: 400px;
+	border: 1px solid #e8e8e8;
+	padding: 15px;
+	margin-bottom: 50px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+#login-container
+{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#message-container
+{
+	max-width: 400px;
+	border: 1px solid #e8e8e8;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+/* About Page */
+#about-container
+{
+	line-height: 25px;
+	letter-spacing: 1px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.team-member
+{
+	margin-bottom: 30px;
+}
+
+.team-member > img
+{
+	max-width: 250px;
+	max-height: 200px;
+}
+
+.team-member-info
+{
+	max-width: 250px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 1.0em;
+	background-color: #e8e8e8;
+}
+
+.footer
+{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #e8e8e8;
+	box-shadow: 0 -2px 5px gray;
+}
+
+.footer-logo
+{
+	margin-top: 20px;
+	width: 80px;
+	height: 80px;
+}
+
+.footer-links
+{
+	width: 100%;
+	list-style: none;
+}
+
+.footer-link-item
+{
+	padding-left: 20px;
+}

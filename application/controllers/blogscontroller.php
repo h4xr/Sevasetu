@@ -21,6 +21,7 @@
          */
         function newpost()
         {
+            initiateSession();
             $this->set("title","New Blog post");
         }
 
@@ -82,6 +83,7 @@
          */
         function view()
         {
+            initiateSession();
             $this->set("title","Blog");
             $data=$this->Blog->getPosts();
             if($data==false)
@@ -102,6 +104,7 @@
          */
         function viewpost($id)
         {
+            initiateSession();
             $this->set("title","Blog");
             $data=$this->Blog->getPostByID(sqlSafe($id));
             if($data==false)
@@ -122,6 +125,7 @@
          */
         function remove($id)
         {
+
             $this->set("title","Blog");
             initiateSession();
             if(!isset($_SESSION['user_id']))

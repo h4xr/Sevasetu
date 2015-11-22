@@ -1,0 +1,25 @@
+<div id="inform" class="transition">
+    <div class="info">
+        <h4>About</h4 >
+        <p><?php echo $program['pages_description']; ?></p>
+    </div>
+    <div class="info info-Gallery transition">
+        <h4>Gallery</h4>
+        <ul id="mb_imagelist" class="mb_imagelist transition">
+            <?php
+                $image=$program['pages_image'];
+                echo<<<_END
+<li><a class='fancybox' rel='group' href='$image' title='$title'><img class='transition' src='$image' width='60' height='60' alt='Program Image'></a></li>
+_END;
+
+            ?>
+        </ul>
+
+    </div>
+
+</div>
+<style type="text/css">
+    body{
+    background-image: url("<?php echo $program['pages_image']; ?>")
+    }
+</style>

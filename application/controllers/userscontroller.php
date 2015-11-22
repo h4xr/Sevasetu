@@ -22,7 +22,12 @@
          */
         function newuser()
         {
-            $this->set("title","New User Registration");
+            initiateSession();
+            $this->set("title","IEEE NIEC | New User Registration");
+            if(isset($_SESSION['user_id']))
+            {
+                header("LOCATION: /indexs/home");
+            }
         }
 
         /**
@@ -30,6 +35,12 @@
          */
         function register()
         {
+            initiateSession();
+            $this->set("title","IEEE NIEC | New User Registration");
+            if(isset($_SESSION['user_id']))
+            {
+                header("LOCATION: /indexs/home");
+            }
             $name=sqlSafe($_POST['name']);
             $username=sqlSafe($_POST['username']);
             $password=sqlSafe($_POST['password']);
@@ -83,6 +94,7 @@
          */
         function sendActivationMail($username)
         {
+            initiateSession();
             $mail=new Email();
             $activationhash=md5($this->User->getUserSalt($username));
             $to=$this->User->getUserEmail($username);
@@ -100,6 +112,12 @@
          */
         function activate($username,$activationhash)
         {
+            initiateSession();
+            if(isset($_SESSION['user_id']))
+            {
+                header("LOCATION: /indexs/home");
+            }
+            $this->set("title","IEEE NIEC | Account Activation");
             $username=sqlSafe($username);
             $activationhash=sqlSafe($activationhash);
 
@@ -129,7 +147,12 @@
          */
         function login()
         {
+            initiateSession();
             $this->set("title","Login");
+            if(isset($_SESSION['user_id']))
+            {
+                header("LOCATION: /indexs/home");
+            }
         }
 
         /**
@@ -139,6 +162,7 @@
          */
         function loginauth()
         {
+            $this->set("title","IEEE NIEC | User Login");
             $username=sqlSafe($_POST['username']);
             $password=sqlSafe($_POST['password']);
 
@@ -158,6 +182,7 @@
                     setSessionData("user_username",$username);
                     setSessionData("user_identifier",md5($_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR']));
                     $this->set("message","Login successful");
+                    header("LOCATION: /indexs/home");
                 }
                 else
                 {
@@ -172,6 +197,8 @@
         function logout()
         {
             initiateSession();
+            $this->set("title","IEEE NIEC");
+
             if(isset($_SESSION['user_id']))
             {
                 foreach($_SESSION as $vals)
@@ -200,6 +227,7 @@
          */
         function processreset()
         {
+            $this->set("title","IEEE NIEC | Password Reset");
             $username=sqlSafe($_POST['username']);
             $passwordResetCode=$this->User->getUserPassword($username);
             if($passwordResetCode==false)
@@ -235,6 +263,7 @@
          */
         function reset($username,$activationhash)
         {
+            $this->set("title","IEEE NIEC | New Password");
             $username=sqlSafe($username);
             $activationhash=sqlSafe($activationhash);
 

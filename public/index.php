@@ -24,6 +24,10 @@ define('ROOT',dirname(dirname(__FILE__)));
  * The request parameter. Stores the request URL.
  */
 $request=$_GET['url'];
+    if(!isset($_GET['url']))
+    {
+        $request="indexs/home";
+    }
 
 require_once(ROOT.DS.'library'.DS.'bootstrap.php');
 

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IEEE-Feedback</title>
+<link rel="stylesheet" type="text/css" href="css/ieee.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/feedback.js"></script>
+</head>
+<body>
+<div id="logo">
+<img src="images/logo.png"  width="200px"/>
+</div>
+<div id="img1">
+<img src="images/2.png"  width="200px"/>
+</div>
+<div id="img2">
+<img class="img2" src="images/1.png"  width="200px"/>
+</div>
+<form action="#" method="post" id="feedback">
+
+<p class="pd">
+<fieldset>
+<legend>Personal Details</legend>
+
+
+<label>Name<span style="color: red; ">*</span>:
+<input type="text" id="Name" name="Name" required="required"/>
+</label>
+
+<br>
+<span class="member">IEEE Member?</span>
+ <input type="radio" name="member" id="yes"
+ value="Y" checked="checked" />
+ <label for="yes">Yes</label>
+    <br>
+ <input type="radio" name="member" id="no"
+ value="N" />
+ <label for="no">No</label>
+
+<br>
+
+<label>Course
+<select name="Course">
+<option value="btech">B.Tech</option>
+<option value="mca">MCA</option>
+<option value="mba">MBA</option>
+</select>
+</label>
+<br>
+
+<label>Branch
+<select name="Branch">
+<option value="cse">Computer Science & Engineering</option>
+<option value="ece">Electronics & Communication Engineering</option>
+<option value="eee">Electrical & Electronics Engineering</option>
+<option value="it">Information Technology</option>
+<option value="civil">Civil Engineering</option>
+<option value="mae">Mechanical & Automation Engineering</option>
+<option value="other">Other</option>
+</select>
+</label>
+<br>
+
+<label>Shift
+<select name="Shift">
+<option value="1">1st Shift</option>
+<option value="2">2nd Shift</option>
+</select>
+</label>
+<br>
+<label>Year
+<select name="year">
+<option value="1">1st Year</option>
+<option value="2">2nd Year</option>
+<option value="3">3rd Year</option>
+<option value="4">4th Year</option>
+</select>
+</label>
+
+<br>
+<label>College Name<span style="color: red; ">*</span>:
+<input type="text" name="CollegeName" id="CollegeName" required="required" />
+</label>
+
+<br>
+<label>E-mail Id:
+<input class="email" type="email" name="email-id" id="email-id"/>
+</label>
+
+
+<br>
+<label>Contact No.<span style="color: red; ">*</span> :
+<input type="text" name="number" id="number" required="required" />
+</label>
+
+</fieldset>
+</p>
+<p class="event">
+<fieldset>
+<legend>About Event</legend>
+<span class="grade">How would you rate this event?</span>
+    <br>
+<input type="radio" name="rate" value="A" checked="checked"/>
+<label for="A">Very Useful</label>
+    <br>
+<input type="radio" name="rate" value="B" />
+<label for="B">Satisfactory</label>
+    <br>
+<input type="radio" name="rate" value="C" />
+<label for="C">Not Very Useful</label>
+    <br>
+<input type="radio" name="rate" value="D" />
+<label for="D">Dissatisfied</label>
+<br>
+<br>
+<label>Suggestions<i>(Anything you feel that could have made this event better)</i>
+<br>
+<textarea name="suggestion" id="suggestion" placeholder="Suggestions..."></textarea>
+</label>
+<br>
+<br>
+<label>Was the venue comfortable in terms of location, seating and lighting? 
+<br>
+
+<textarea name="location" id="location" placeholder="What you think?"></textarea>
+</label>
+<br>
+    <br>
+<label>Any other events you might want us to conduct in future?<i>(ideas for upcoming events)</i>
+<br>
+<textarea name="ideas" id="ideas" placeholder="Ideas..."></textarea>
+</label>
+
+</fieldset>
+</p>
+<p class="extra">
+<label>Have you heard about IEEE before?
+<input type="radio" name="heard" value="Yes" checked="checked"/>Yes
+<input type="radio" name="heard" value="No" />No
+</label>
+<br>
+<label>Would you be interested in joining IEEE?
+<input type="radio" name="joinIEEE" value="Yes" checked="checked"/>Yes
+<input type="radio" name="joinIEEE" value="No" />No
+</label>
+</p>
+<br>
+<div id="submit">
+<input class="submit" type="submit" name="submit" value="Submit" id="form_submit" />
+</div>
+
+
+</form>
+
+<footer>
+
+<p>&copy IEEE-NIEC
+</p>
+</footer>
+</body>
+</html>

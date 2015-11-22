@@ -3,3 +3,168 @@
 [11-Jul-2015 09:32:51 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/image.class.php on line 104
 [11-Jul-2015 09:35:05 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/image.class.php on line 104
 [11-Jul-2015 09:43:40 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 4
+[11-Jul-2015 17:53:39 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/indexs/home.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[11-Jul-2015 17:53:39 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/indexs/home.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[11-Jul-2015 18:14:49 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[11-Jul-2015 18:14:49 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/indexs/public.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[11-Jul-2015 18:14:49 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/indexs/public.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[12-Jul-2015 17:31:42 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[12-Jul-2015 17:31:42 Asia/Calcutta] PHP Fatal error:  Class '' not found in /home/saurabh/net/library/controller.class.php on line 53
+[12-Jul-2015 17:37:33 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 17:38:22 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 17:38:39 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 18:31:20 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 18:34:17 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 18:34:47 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:13:25 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:16:34 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:16:47 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:16:47 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:16:47 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/users/localhost.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[12-Jul-2015 19:16:47 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/users/localhost.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[12-Jul-2015 19:17:34 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:17:34 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/users/localhost.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[12-Jul-2015 19:17:34 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/users/localhost.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[12-Jul-2015 19:20:04 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:20:27 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:20:36 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:20:53 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:21:13 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:22:13 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:22:22 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[12-Jul-2015 19:22:22 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[12-Jul-2015 19:22:22 Asia/Calcutta] PHP Fatal error:  Class '' not found in /home/saurabh/net/library/controller.class.php on line 53
+[12-Jul-2015 19:22:42 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[12-Jul-2015 19:22:42 Asia/Calcutta] PHP Fatal error:  Class '' not found in /home/saurabh/net/library/controller.class.php on line 53
+[12-Jul-2015 19:22:47 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/header.php on line 5
+[13-Jul-2015 10:13:39 Asia/Calcutta] PHP Fatal error:  Call to undefined function initiatesession() in /home/saurabh/net/application/controllers/aboutscontroller.php on line 15
+[15-Aug-2015 19:05:57 Asia/Calcutta] PHP Notice:  Undefined index: admins_salt in /home/saurabh/net/application/controllers/adminscontroller.php on line 67
+[15-Aug-2015 19:05:57 Asia/Calcutta] PHP Notice:  Undefined index: admins_password in /home/saurabh/net/application/controllers/adminscontroller.php on line 67
+[15-Aug-2015 19:08:31 Asia/Calcutta] PHP Notice:  Undefined property: Admin::$password in /home/saurabh/net/application/models/admin.php on line 60
+[15-Aug-2015 19:12:51 Asia/Calcutta] PHP Notice:  Undefined index: username in /home/saurabh/net/application/controllers/adminscontroller.php on line 64
+[15-Aug-2015 19:12:51 Asia/Calcutta] PHP Notice:  Undefined index: password in /home/saurabh/net/application/controllers/adminscontroller.php on line 65
+[15-Aug-2015 19:15:56 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[15-Aug-2015 19:15:56 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/dashboard.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 19:15:56 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/dashboard.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 19:19:13 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/dashboard.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 19:19:13 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/dashboard.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 19:19:15 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/dashboard.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 19:19:15 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/dashboard.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 20:27:17 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[15-Aug-2015 20:27:17 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/removeslide.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 20:27:17 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/removeslide.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[15-Aug-2015 21:44:47 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[15-Aug-2015 21:44:47 Asia/Calcutta] PHP Warning:  move_uploaded_file(/e63969aede68e970ca814dff7406a23c_Screenshotfrom2015-08-1520:34:42.png): failed to open stream: Permission denied in /home/saurabh/net/library/media.class.php on line 223
+[15-Aug-2015 21:44:47 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpPOx81r' to '/e63969aede68e970ca814dff7406a23c_Screenshotfrom2015-08-1520:34:42.png' in /home/saurabh/net/library/media.class.php on line 223
+[15-Aug-2015 21:49:04 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[15-Aug-2015 21:49:04 Asia/Calcutta] PHP Warning:  move_uploaded_file(/b2052210b4037e3fdf308f70831bc8ed_Screenshotfrom2015-08-1520:34:42.png): failed to open stream: Permission denied in /home/saurabh/net/library/media.class.php on line 223
+[15-Aug-2015 21:49:04 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpPFqANa' to '/b2052210b4037e3fdf308f70831bc8ed_Screenshotfrom2015-08-1520:34:42.png' in /home/saurabh/net/library/media.class.php on line 223
+[15-Aug-2015 21:50:10 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[15-Aug-2015 21:50:23 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[15-Aug-2015 21:50:45 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[15-Aug-2015 21:53:35 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 15:34:30 Asia/Calcutta] PHP Notice:  Undefined index: username in /home/saurabh/net/application/controllers/adminscontroller.php on line 70
+[30-Aug-2015 15:34:30 Asia/Calcutta] PHP Notice:  Undefined index: password in /home/saurabh/net/application/controllers/adminscontroller.php on line 71
+[30-Aug-2015 15:35:45 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[30-Aug-2015 15:35:45 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/removeslide.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[30-Aug-2015 15:35:45 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/removeslide.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[30-Aug-2015 15:46:43 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 16:54:39 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 16:55:04 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 16:57:18 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 19:40:21 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 19:55:30 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 19:58:23 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 19:59:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 20:01:08 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[30-Aug-2015 20:07:51 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[03-Sep-2015 16:23:25 Asia/Calcutta] PHP Notice:  Undefined index: username in /home/saurabh/net/application/controllers/adminscontroller.php on line 70
+[03-Sep-2015 16:23:25 Asia/Calcutta] PHP Notice:  Undefined index: password in /home/saurabh/net/application/controllers/adminscontroller.php on line 71
+[03-Sep-2015 16:23:30 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[03-Sep-2015 16:23:30 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[03-Sep-2015 16:23:30 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[03-Sep-2015 16:24:02 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[07-Sep-2015 10:03:35 Asia/Calcutta] PHP Notice:  Undefined offset: 0 in /home/saurabh/net/library/shared.php on line 97
+[11-Sep-2015 17:00:16 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Sep-2015 17:00:31 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/library/security,php): failed to open stream: No such file or directory in /home/saurabh/net/application/controllers/programscontroller.php on line 9
+[11-Sep-2015 17:00:31 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/library/security,php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/application/controllers/programscontroller.php on line 9
+[11-Sep-2015 17:00:31 Asia/Calcutta] PHP Fatal error:  Call to undefined function sqlSafe() in /home/saurabh/net/application/controllers/programscontroller.php on line 15
+[11-Sep-2015 17:01:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:01:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:01:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:01:20 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:01:21 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:02:45 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:02:45 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:02:45 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:03:33 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:03:33 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:03:33 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:04:05 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:04:05 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:04:05 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:05:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:05:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:05:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:05:27 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:05:27 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:05:27 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:06:15 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:06:15 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:06:15 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:06:18 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:06:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:06:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:06:19 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Sep-2015 17:07:14 Asia/Calcutta] PHP Notice:  Undefined index: pages_title in /home/saurabh/net/application/controllers/programscontroller.php on line 17
+[11-Sep-2015 17:07:14 Asia/Calcutta] PHP Notice:  Undefined index: pages_description in /home/saurabh/net/application/views/programs/view.php on line 4
+[11-Sep-2015 17:07:14 Asia/Calcutta] PHP Notice:  Undefined index: pages_image in /home/saurabh/net/application/views/programs/view.php on line 10
+[11-Oct-2015 08:04:18 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:04:29 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[11-Oct-2015 08:04:29 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/removepage.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[11-Oct-2015 08:04:29 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/removepage.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[11-Oct-2015 08:04:34 Asia/Calcutta] PHP Notice:  Undefined variable: title in /home/saurabh/net/application/views/admins/header.php on line 5
+[11-Oct-2015 08:04:34 Asia/Calcutta] PHP Warning:  include_once(/home/saurabh/net/application/views/admins/removepage.php): failed to open stream: No such file or directory in /home/saurabh/net/library/template.class.php on line 73
+[11-Oct-2015 08:04:34 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/saurabh/net/application/views/admins/removepage.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/saurabh/net/library/template.class.php on line 73
+[11-Oct-2015 08:06:46 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:25:43 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Notice:  Undefined index: name in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:28:13 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:29:41 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:29:41 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:29:42 Asia/Calcutta] PHP Warning:  unlink(/home/saurabh/net/tmp/log/watchdog_9c2b568f832e91f8846a301d7524584a): No such file or directory in /home/saurabh/net/library/watchdog.class.php on line 181
+[11-Oct-2015 08:31:44 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:31:44 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:31:44 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:31:44 Asia/Calcutta] PHP Warning:  unlink(/home/saurabh/net/tmp/log/watchdog_402a9f81312d08a01674bc331d378471): No such file or directory in /home/saurabh/net/library/watchdog.class.php on line 181
+[11-Oct-2015 08:31:44 Asia/Calcutta] PHP Warning:  unlink(/home/saurabh/net/tmp/log/watchdog_402a9f81312d08a01674bc331d378471): No such file or directory in /home/saurabh/net/library/watchdog.class.php on line 181
+[11-Oct-2015 08:47:24 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:47:24 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:47:24 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
+[11-Oct-2015 08:47:24 Asia/Calcutta] PHP Warning:  unlink(/home/saurabh/net/tmp/log/watchdog_2d66d83377e409096b4683ff33a2f34f): No such file or directory in /home/saurabh/net/library/watchdog.class.php on line 181
+[11-Oct-2015 08:47:25 Asia/Calcutta] PHP Warning:  unlink(/home/saurabh/net/tmp/log/watchdog_2d66d83377e409096b4683ff33a2f34f): No such file or directory in /home/saurabh/net/library/watchdog.class.php on line 181
+[09-Nov-2015 11:14:25 Asia/Calcutta] PHP Strict Standards:  Only variables should be passed by reference in /home/saurabh/net/library/media.class.php on line 98
